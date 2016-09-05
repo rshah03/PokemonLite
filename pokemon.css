@@ -1,0 +1,178 @@
+body {
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.game-screen {
+  position: relative;
+  background-image: url('Images/battle-background.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  border: 3px solid black;
+  border-radius: 8px 8px 0 0;
+  height: 480px;
+  width: 800px;
+}
+
+.battle-stats {
+  background: #363636;
+  border-radius: 8px 8px 8px 8px;
+  padding: 12px;
+  color: white;
+}
+
+.battle-stats .pokeballs {
+  position: relative;
+  dispaly: inline-block;
+  vertical-align: middle;
+}
+
+.battle-stats .pokeballs .pokeball {
+  position: relative;
+  float: left;
+  background-image: url('http://bit.ly/pokeballimg');
+  background-size: 100% 100%;
+  width: 25px;
+  height: 25px;
+}
+
+.battle-stats .hp-track:before {
+  content: 'HP:'
+}
+
+.battle-stats .hp-track {
+  float: right;
+}
+
+.battle-stats .pokemon-name {
+  font-weight: bold;
+}
+
+.battle-stats .pokemon-level:before {
+  content: "LVL"
+}
+
+
+.opponent {
+  position: relative;
+  height: 300px;
+}
+
+.opponent .battle-stats {
+  position: absolute;
+  top: 96px;
+  left: 40px;
+  width: 320px;
+}
+
+.opponent .pokemon-sprite {
+  position: absolute;
+  bottom: 0;
+  right: 140px;
+  width: 170px;
+}
+
+.you {
+  position: relative;
+  height: 192px;
+}
+
+.you .battle-stats {
+  position: absolute;
+  top: 48px;
+  right: 40px;
+  width: 320px;
+}
+
+.you .pokemon-sprite {
+  position: absolute;
+  left: 100px;
+  bottom: 40px;
+  width: 240px;
+}
+
+.dialog-box {
+  padding: 8px;
+  background: #363636;
+  border: 3px solid black;
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  color: white;
+  height: 120px;
+  width: 784px;
+}
+
+.dialog-box .dialog-message {
+  position: relative;
+  float: left;
+  font-size: 24px;
+  width: 50%;
+}
+
+.dialog-box .continue {
+  position: absolute;
+  margin-top: 30px;
+  float: left;
+  width: 25%;
+  height 100%;
+}
+
+.dialog-box .continue button {
+  position: relative;
+  float: left;
+  background: #666;
+  border: 3px solid black;
+  border-radius: 4px;
+  color: white;
+  font-family: monospace;
+  font-size: 20px;
+  line-height: 14px;
+  margin: 4px;
+  padding: 16px;
+  outline: none !important;
+}
+
+.dialog-box .continue button:hover {
+  background: #989898;
+  border-color: white;
+}
+
+.dialog-box .continue button:active {
+  background: #555;
+  border-color: #00ff19;
+
+}
+
+.dialog-box .actions {
+  position: relative;
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+
+.dialog-box .actions button {
+  position: relative;
+  float: left;
+  background: #666;
+  border: 3px solid black;
+  border-radius: 4px;
+  color: #fff;
+  font-family: monospace;
+  font-size: 20px;
+  line-height: 14px;
+  margin: 4px;
+  padding: 16px;
+  width: calc(50% - 8px);
+  height: calc(50% - 8px);
+  outline: none !important;
+}
+
+.dialog-box .actions button:hover {
+  background: #989898;
+  border-color: white;
+}
+
+.dialog-box .actions button:active {
+  background: #555;
+  border-color: #00ff19;
+}

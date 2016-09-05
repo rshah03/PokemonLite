@@ -1,0 +1,68 @@
+<!DOCTYPE html5>
+<html>
+
+<head>
+    <title>Pokemon Game</title>
+    <link rel="stylesheet" href="pokemon.css" type="text/css" />
+	<!--
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	-->
+</head>
+
+<div class="game-screen">
+  <div class="opponent">
+		<div class="battle-stats">
+			<div class="top-of-stats">
+				<div class="pokeballs">
+          <div class="pokeball"></div>
+          <div class="pokeball"></div>
+          <div class="pokeball"></div>
+          <div class="pokeball"></div>
+          <div class="pokeball"></div>
+        </div>
+				<div id="opponent-HP" class="hp-track">
+					100
+				</div>
+			</div>
+			<span class="pokemon-name">Ho-Oh</span>
+			<span class="pokemon-level">100</span>
+    </div>
+		<img class="pokemon-sprite" src="https://img.pokemondb.net/sprites/black-white/anim/normal/ho-oh.gif" />
+	</div>
+
+	<div class="you">
+		<div class="battle-stats">
+			<div class="top-of-stats">
+				<div class="pokeballs">
+          <div class="pokeball"></div>
+          <div class="pokeball"></div>
+          <div class="pokeball"></div>
+          <div class="pokeball"></div>
+          <div class="pokeball"></div>
+        </div>
+				<div id="my-HP" class="hp-track">
+					100
+				</div>
+			</div>
+			<span class="pokemon-name">Lugia</span>
+			<span class="pokemon-level">100</span>
+		</div>
+		<img class="pokemon-sprite" src="https://img.pokemondb.net/sprites/black-white/anim/back-normal/lugia.gif" alt="Lugia" />
+	</div>
+</div>
+<div class="dialog-box">
+	<div id="dialog-message" class="dialog-message">
+		What should Lugia do?
+	</div>
+	<div class="actions">
+		<button onclick="fight()">Fight</button>
+		<button onclick="bag()">Bag</button>
+	</div>
+	<div class="continue">
+		<button onclick="continue()">Continue</button>
+	</div>
+</div>
+
+</html>
