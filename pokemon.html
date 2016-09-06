@@ -30,7 +30,7 @@
 			<span id="opponent-pokemon-name" class="pokemon-name">Ho-Oh</span>
 			<span id="opponent-pokemon-level" class="pokemon-level">100</span>
     </div>
-		<img class="pokemon-sprite" src="https://img.pokemondb.net/sprites/black-white/anim/normal/ho-oh.gif" />
+		<img id="opponentCurrentPokemon" class="pokemon-sprite" src="https://img.pokemondb.net/sprites/black-white/anim/normal/ho-oh.gif" />
 	</div>
 
 	<div class="you">
@@ -50,19 +50,23 @@
 			<span id="my-pokemon-name" class="pokemon-name">Lugia</span>
 			<span id="my-pokemon-level" class="pokemon-level">100</span>
 		</div>
-		<img class="pokemon-sprite" src="https://img.pokemondb.net/sprites/black-white/anim/back-normal/lugia.gif" alt="Lugia" />
+		<img id="myCurrentPokemon" class="pokemon-sprite" src="https://img.pokemondb.net/sprites/black-white/anim/back-normal/lugia.gif" alt="Lugia" />
 	</div>
 </div>
 <div class="dialog-box">
 	<div id="dialog-message" class="dialog-message">
 		What should Lugia do?
 	</div>
-	<div class="actions">
-		<button onclick="fight()">Fight</button>
-		<button onclick="bag()">Bag</button>
+	<div id="actions" class="actions">
+		<button onclick="move1()">Move 1</button>
+		<button onclick="move2()">Move 2</button>
+		<button onclick="move3()">Move 3</button>
+		<button onclick="move4()">Move 4</button>
+
 	</div>
 	<div class="continue">
 		<button onclick="continue()">Continue</button>
+		<button onclick="bag()">Bag</button>
 	</div>
 </div>
 

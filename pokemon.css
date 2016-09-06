@@ -176,3 +176,11 @@ body {
   background: #555;
   border-color: #00ff19;
 }
+
+.dummyActionsClass {
+  position: relative;
+  float: right;
+  width: 50%;
+  height: 100%;
+  background: #5083f1;
+}
