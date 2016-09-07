@@ -33,7 +33,7 @@ var Lugia = new Pokemon('Lugia', 'https://img.pokemondb.net/sprites/black-white/
 
 
 function move1() {
-	console.log(LugiaMoveset); //Works
+	console.log(Lugia.moveset[0].moveName); // -- Used 
     //docuement.getElementById('dialog-message').innerHTML = 'Lugia used move 1!';
 
 }
