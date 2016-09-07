@@ -25,15 +25,22 @@ var recover = new Move('Recover', -10);
 var hydropump = new Move('Hydropump', 20);
 */
 var aeroBlast = new Move('Aero Blast', 20, 5);
+var hiddenPower = new Move('Hidden Power', 13, 10);
+var recover = new Move('Recover', -10, 10);
+var hydropump = new Move('Hydropump', 15, 7);
+
 //var LugiaMoveset = [Move('Aero Blast', 20, 5), Move('Hidden Power', 13, 10), Move('Recover', -10, 10), Move('Hydropump', 15, 7)];
-var LugiaMoveset = [aeroBlast];
+var LugiaMoveset = [aeroBlast, hiddenPower, recover, hydropump];
 var Lugia = new Pokemon('Lugia', 'https://img.pokemondb.net/sprites/black-white/anim/back-normal/lugia.gif', 100, 'alive', true, LugiaMoveset);
 
 
 
-
 function move1() {
-	console.log(Lugia.moveset[0].moveName); // -- Used 
+    //get the current pokemon -- how would you do that?
+	console.log(Lugia.moveset[0].moveName); // -- Used
     //docuement.getElementById('dialog-message').innerHTML = 'Lugia used move 1!';
+}
 
+function move2() {
+    console.log(Lugia.moveset[1].moveName);
 }
