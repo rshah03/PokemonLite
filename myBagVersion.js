@@ -39,6 +39,7 @@ var bagItemsList = [oranBerry, potion, superPotion, hyperPotion];
 var myBag = new BagObj(bagItemsList);
 
 function bag() {
-	for (var i = 0; i < myBag.itemList.length; i++)
-		console.log(myBag.itemList[i].itemName);
+	$('#dialog-message').html('Clicked bag!');
+	//for (var i = 0; i < myBag.itemList.length; i++)
+		//console.log(myBag.itemList[i].itemName);
 }
