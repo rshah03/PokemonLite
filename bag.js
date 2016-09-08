@@ -1,6 +1,7 @@
 
 function Bag() {
   this.itemList = [];
+  console.log("BAG TEST");
 }
 
 Bag.prototype.hashKey = function hashKey(key) {
